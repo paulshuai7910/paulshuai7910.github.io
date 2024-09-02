@@ -17,33 +17,34 @@ Portals：将元素渲染到组件之外的 dom 节点
 # React 16.3
 
 新增 getDerivedStateFromProps 生命周期方法，用于派生状态
-react16.8
+
+# react16.8
+
 react hooks,建议启用 eslint-plugin-react-hooks 这个 ESLint 插件来强制执行 Hooks 的最佳实践
 react devtool 支持 Hooks
 typescript 和 Flow 的支持
 性能优化
 ReactTestUtils.act
 
-# React 16.8
-
 还添加了一个名为 ReactTestUtils.act()的 API，它可以确保测试中的行为与在浏览器中的行为更加接近。这个 API 主要用于处理异步操作和副作用的测试。
 
 # react 17
 
-渐进式更新
-新的 API 和特性
-时间系统改进
+- 渐进式更新
+- 新的 API 和特性
+- 时间系统改进
 
 # React 18
 
-并发渲染器
-transitions：引入 transitions 概念用于区分 urgent 和 non-urgent 的更新，有助于开发者更好的控制 UI 渲染的优先级，减少卡顿
-startTransition API： 新的 API 允许开发者将某些更新状态标记为非紧急（non-urgent），这些个更新会在当前屏幕帧渲染完成后进行异步
-Suspense 扩展
-流式服务器端渲染
-更细颗粒度的可选择性
-自动批处理
-react 18 引入了自动批处理功能，这可以自动的将多个状态合并为一个更新批次，从而提高渲染性能，在 react17 以及以前的版本中，需要手动使用 unstable_bantchUpdates 来实现类似新功能
+### 并发渲染器
+
+- transitions：引入 transitions 概念用于区分 urgent 和 non-urgent 的更新，有助于开发者更好的控制 UI 渲染的优先级，减少卡顿
+- startTransition API： 新的 API 允许开发者将某些更新状态标记为非紧急（non-urgent），这些个更新会在当前屏幕帧渲染完成后进行异步
+- Suspense 扩展
+- 流式服务器端渲染
+- 更细颗粒度的可选择性
+- 自动批处理
+- react 18 引入了自动批处理功能，这可以自动的将多个状态合并为一个更新批次，从而提高渲染性能，在 react17 以及以前的版本中，需要手动使用 unstable_bantchUpdates 来实现类似新功能
 
 ## new hooks
 
