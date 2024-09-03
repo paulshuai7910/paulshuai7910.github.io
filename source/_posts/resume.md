@@ -28,7 +28,7 @@ As a full-stack engineer, I am skilled in performing full-stack development cent
 
 # tech stack
 
-Languages:
+## Languages
 
 - HTML
 - CSS
@@ -38,7 +38,9 @@ Languages:
 - Nodejs
 - Less
 - Sass
-  Framework:
+
+## Framework
+
 - Apollo
 - React
 - semantic
@@ -47,12 +49,19 @@ Languages:
 - jQuery
 - Bootstrap
 - Jest
-  Database:
+
+## Database
+
 - ArangoDB
-  Others:
+
+## CI/CD
+
 - Jenkins
-- Git
 - Azure ADO
+
+## Others
+
+- Git
 - Docker
 - Sonar
 
