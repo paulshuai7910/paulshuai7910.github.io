@@ -16,7 +16,7 @@ As a full-stack engineer, I am skilled in performing full-stack development cent
 
 # overview
 
-- Computer Science and Computing major, seven years of front-end development experience, including three years of full-stack development.
+- Computer Science and Technology major, seven years of front-end development experience, including three years of full-stack development.
 - Years of experience in e-commerce and risk control industries, having developed risk assessment systems, e-commerce OMS/CMS systems, PC/Mobile C-end e-commerce websites, mini-programs, etc.
 - Proficient in using front-end technology stacks such as React, TypeScript, Apollo-react, GraphQL, NodeJs, Arango, etc.
 - Skilled in DIV+CSS webpage layout using Less, Sass, etc., for responsive design and fluid layout webpage development. Familiar with HTML5 semantic markup and web accessibility (A11y) development.
