@@ -143,3 +143,23 @@ PEXPIRE 命令：
 在 SET 命令中设置过期时间：
 可以在使用 SET 命令存储键值对时，同时设置过期时间。例如：SET key value EX 60 表示设置键 key 的值为 value，并设置过期时间为 60 秒。
 设置过期时间可以有效地管理 Redis 的内存使用，避免存储不必要的数据。同时，也可以用于实现一些特定的业务逻辑，如缓存过期、会话超时等。
+
+# 配置 redis 内存淘汰策略
+
+## Redis 容器的配置方式
+
+如果是使用 Docker Compose 启动 Redis 容器，可以在 docker-compose.yml 文件中为 Redis 服务添加配置环境变量来设置内存淘汰策略。例如：
+
+```yml
+services:
+  redis:
+    image: redis:latest
+    environment:
+      - REDIS_ARGS=--maxmemory-policy volatile-lru
+```
+
+如果是通过 docker run 命令启动 Redis 容器，可以在命令中添加参数来设置内存淘汰策略。例如：
+
+```yml
+docker run --name some-redis -d redis redis-server --maxmemory-policy allkeys-lru
+```
