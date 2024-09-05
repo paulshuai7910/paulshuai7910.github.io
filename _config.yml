@@ -9,7 +9,7 @@ description: "this is Paul's blog"
 keywords: "react nodejs "
 author: Paul Shuai
 language: en
-timezone: ""
+timezone: "Asia/Shanghai"
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
@@ -26,7 +26,7 @@ public_dir: public
 tag_dir: tags
 archive_dir: archives
 category_dir: categories
-code_dir: downloads/code
+code_dir: source/about
 i18n_dir: :lang
 skip_render:
 
@@ -40,8 +40,8 @@ external_link:
   exclude: ""
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
-relative_link: false
+post_asset_folder: true
+relative_link: true
 future: true
 syntax_highlighter: highlight.js
 highlight:
