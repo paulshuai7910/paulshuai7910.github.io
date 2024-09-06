@@ -1,5 +1,6 @@
 ---
-title: Promise
+title: TypeScript
+
 date: 2024-02-09 19:59:03
 tags:
 ---
