@@ -117,3 +117,60 @@ child.send("start")
 child_process 用自己的内存空间运行自己的进程，而 worker thread 则是一个进程中的线程，可以与主线程共享内存，这有助于避免来回昂贵的数据序列化。
 通过 HTTP 与客户端建立双向实时连接
 我们可以使用 WebSockets 或者长轮询，有像http://soket.io和SignalR这样的库可以为我们简化这个过程。如果WebSockets在浏览器中不可用，它们甚至可以为客户端提供长时间的轮询功能。
+
+# node 调试
+
+在 Node.js 中调试后端代码有以下几种方法：
+
+**一、使用内置调试器**
+
+1. 启动调试：
+
+   - 在命令行中使用 `node` 命令启动应用时加上 `--inspect` 或 `--inspect-brk` 参数。
+   - 例如：`node --inspect app.js`。这会启动 Node.js 进程并在指定端口（通常是 9229）上监听调试连接。
+   - `--inspect-brk` 会在第一行代码处暂停执行，方便在程序一开始就进行调试。
+
+2. 使用浏览器开发者工具进行调试：
+   - 打开 Chrome 浏览器（其他支持 Chrome DevTools 协议的浏览器也可以），在地址栏输入 `chrome://inspect`。
+   - 点击“Open dedicated DevTools for Node”，即可打开与浏览器开发者工具类似的调试界面。
+   - 在这个界面中，可以设置断点、单步执行代码、查看变量值等。
+
+**二、使用 VS Code 进行调试**
+
+1. 配置调试环境：
+
+   - 在 VS Code 中，打开项目文件夹，点击左侧的调试图标（或按快捷键 `Ctrl+Shift+D`）。
+   - 点击“创建 launch.json 文件”，选择“Node.js”环境，这会在项目的 `.vscode` 文件夹下生成一个 `launch.json` 配置文件。
+   - 配置文件中可以设置启动文件、参数、环境变量等。例如：
+     ```json
+     {
+       "version": "0.2.0",
+       "configurations": [
+         {
+           "type": "node",
+           "request": "launch",
+           "name": "Launch Program",
+           "program": "${workspaceFolder}/app.js"
+         }
+       ]
+     }
+     ```
+
+2. 启动调试：
+   - 在代码中设置断点，然后点击调试工具栏中的绿色三角形（或按 `F5`）启动调试。
+   - VS Code 会在断点处暂停执行，此时可以查看变量值、调用栈等信息，进行单步调试等操作。
+
+**三、使用第三方调试工具**
+
+1. `nodemon` 结合调试：
+
+   - `nodemon` 是一个在开发过程中自动重启 Node.js 应用的工具。可以结合调试工具使用。
+   - 安装 `nodemon` 和 `debug` 模块：`npm install nodemon debug`。
+   - 在代码中添加调试语句，例如：`const debug = require('debug')('app'); debug('Hello, debug!');`。
+   - 修改 `package.json` 文件中的启动脚本，例如：`"start": "node --inspect-brk=9229 -r debug app.js"`。这样在启动应用时会进入调试模式，并且当代码发生变化时，`nodemon` 会自动重启应用。
+
+2. `pm2` 结合调试：
+   - `pm2` 是一个用于管理 Node.js 应用的进程管理器。它也可以结合调试工具使用。
+   - 安装 `pm2` 和 `pm2-debug` 模块：`npm install pm2 pm2-debug`。
+   - 使用 `pm2` 启动应用并进入调试模式：`pm2 start app.js --watch --debug`。
+   - 可以使用 `pm2 logs` 命令查看应用的日志，包括调试信息。

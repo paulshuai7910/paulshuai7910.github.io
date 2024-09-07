@@ -3,9 +3,13 @@ title: ts in node
 date: 2024-05-04 09:55:09
 tags:
 ---
+
 Node.js 无法原生运行 TypeScript。你无法直接从命令行调用 node example.ts。但是这个问题有三种解决方案
+
 # 在 Node.js 中运行 TypeScript 代码
+
 npx 代表 Node Package Execute。此工具允许我们运行 TypeScript 的编译器而无需全局安装它。
+
 ## 编译 TypeScript 到 JavaScript
 
 ```bash
@@ -35,6 +39,15 @@ npx ts-node example.ts
 ```bash
 npm i -D tsx
 npx tsx example.ts
+```
+
+- 同时需要修改配置：
+  tsconfig.json
+
+```json
+    "ts-node": {
+      "esm": true
+    },
 ```
 
 # 通过 node 使用 tsx，你可以通过 --import 注册 tsx：

@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Tech-paul
-subtitle: "zshuai"
-description: "this is Paul's blog"
+title: Tech-Paul
+subtitle: "Teach"
+description: "This is Paul's blog"
 keywords: "react nodejs "
 author: Paul Shuai
 language: en
@@ -39,7 +39,7 @@ external_link:
   field: site # Apply to the whole site
   exclude: ""
 filename_case: 0
-render_drafts: false
+render_drafts: true
 post_asset_folder: true
 relative_link: true
 future: true
@@ -89,7 +89,7 @@ pagination_dir: page
 
 # Include / Exclude file(s)
 ## include:/exclude: options only apply to the 'source/' folder
-include:
+include:"_about/**/*"
 exclude:
 ignore:
 
