@@ -94,7 +94,7 @@ open_graph:
 # External url should start with http:// or https://
 menu:
   home: / || fa fa-home
-  about: /about/ || fa fa-user
+  about me: /about/ || fa fa-user
   node:
     default: /node/ || fa fa-user
     node++:
