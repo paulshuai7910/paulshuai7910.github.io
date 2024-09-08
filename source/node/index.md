@@ -6,6 +6,8 @@ tags:
 
 **Nodejs 是一个开源和跨平台的 js 运行时环境！！！**
 
+![http cache](node/index/iopoll.jpg)
+
 js 代码<-->V8 引擎<-->Nodejs Bindings(node api)<---->Libuv
 
 nodejs 启动--> 注册 C++模块 ---> 初始化模块加载器 ---> 初始化 V8 ---> 初始化 libuv ---> 初始化 libuv 事件循环 ---> 启动事件循环 ---> 启动 V8 ---> 启动 libuv ---> 启动 libuv 事件循环 ---> 启动事件循环 ---> 启动 V8 ---> 启动 libuv ---> 启动 libuv 事件循环 --->启动事件循环 ---> 启动 V8 ---> 启动 libuv ---> 启动 libuv 事件循环 --->
