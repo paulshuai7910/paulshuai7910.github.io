@@ -14,7 +14,7 @@ As a front-end engineer, I am proficient in web development work centered around
 
 As a full-stack engineer, I am skilled in performing full-stack development centered on the Apollo framework with Node.js as the backend, encompassing tools, and technologies like Apollo-server, Express, GraphQL, and arangoDB.
 
-# overview
+# Overview
 
 - Computer Science and Technology major, seven years of front-end development experience, including three years of full-stack development.
 - Years of experience in e-commerce and risk control industries, having developed risk assessment systems, e-commerce OMS/CMS systems, PC/Mobile C-end e-commerce websites, mini-programs, etc.
@@ -26,44 +26,11 @@ As a full-stack engineer, I am skilled in performing full-stack development cent
 - Collaborated with overseas development teams under the Scrum/Agile framework, Azure Fundamentals certified, and proficient in using Jira, Azure ADO, Jenkins, etc.
 - Works with a strong sense of responsibility and excellent communication and presentation skills.
 
-# tech stack
+# Tech stack
 
-## Languages
-
-- HTML
-- CSS
-- JavaScript
-- GraphQL
-- TypeScript
-- Nodejs
-- Less
-- Sass
-
-## Framework
-
-- Apollo
-- React
-- semantic
-- Wepy
-- Express
-- jQuery
-- Bootstrap
-- Jest
-
-## Database
-
-- ArangoDB
-
-## CI/CD
-
-- Jenkins
-- Azure ADO
-
-## Others
-
-- Git
-- Docker
-- Sonar
+| Languages                                                                                                                                | Framework                                                                                                                          | Database                   | CI/CD                                       | Others                                             |
+| ---------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | -------------------------- | ------------------------------------------- | -------------------------------------------------- |
+| <ul><li>HTML</li><li> CSS</li><li> JavaScript</li><li> GraphQL</li><li> TypeScript</li><li> Nodejs</li><li> Less</li><li> Sass</li></ul> | <ul><li>Apollo</li><li>React</li><li>semantic</li><li>Wepy</li><li>Express</li><li>jQuery</li><li>Bootstrap</li><li>Jest</li></ul> | <ul><li>ArangoDB</li></ul> | <ul><li>Jenkins</li><li>Azure ADO</li></ul> | <ul><li>Git</li><li>Docker</li><li>Sonar</li></ul> |
 
 # WORKING EXPERIENCE
 
@@ -92,5 +59,5 @@ As a full-stack engineer, I am skilled in performing full-stack development cent
 
 # CONTACT
 
-- Email: shuaizihao0608@outlook.com
+- Email: <a href="mailto:shuaizihao0608@outlook.com">shuaizihao0608@outlook.com</a>
 - Phone: 10001001110110010001001000100010000 (二进制号码)
