@@ -4,6 +4,16 @@ date: 2024-04-12 20:09:55
 tags:
 ---
 
+# 代码分割（Code Splitting）
+
+- 动态导入：使用动态导入（import()）来按需加载代码块，减少初始加载时间。
+- 配置 SplitChunksPlugin：在 Webpack 配置中使用 optimization.splitChunks 选项来分割代码，提取公共模块和第三方库到单独的 chunk 中。
+
+# Tree Shaking
+
+- 原理：基于 ES6 模块静态结构的特性，通过静态分析找出并删除未引用的代码。
+- 配置：在生产模式下（mode: 'production'），Webpack 默认启用 Tree Shaking。确保使用 ES6 模块语法。
+
 # 增加入口文件，共享依赖,代码分割
 
 防止重复引用：
@@ -77,3 +87,7 @@ const routes = [
   },
 ]
 ```
+
+- 监控和性能分析
+  使用 webpack-bundle-analyzer：该插件可以帮助你分析打包后的文件大小，找出可以优化的地方。
+- 使用 speed-measure-webpack-plugin：分析 Webpack 打包过程中 Loader 和 Plugin 的耗时，有助于找到构建过程中的性能瓶颈。

@@ -1,5 +1,5 @@
 ---
-title: TypeScript
+title: TypeScript 基础
 
 date: 2024-02-09 19:59:03
 tags:
