@@ -8,25 +8,23 @@ tags:
 
 Hello, my name is Paul, And I graduated from Huanghe Science and Technology College in 2017. My major in college was Computer Science and Technology.
 
-I have seven years of work experience, with four years spent as a Web Development Engineer. Three years ago, I transitioned into a Full-Stack Engineer role."
+I have seven years of work experience, with four years worked as a Web Development Engineer. Three years ago, I transitioned into a Full-Stack Engineer role."
 
-I have a deep understanding of React Framework,include hooks, state management( with tools like redux or context API),component-base architecture, and best practices for writing scalable and maintainable code. I am proficient in working with **React 18**, **React Router**, and **Apollo Client** for GraphQL integration. My experience extends to CSS frameworks such as **Tailwind CSS** and **Styled Components**, ensuring responsive and visually appealing UIs.
+I have a deep understanding of React Framework,include hooks, state management( with tools like redux or context API),component-base architecture, and best practices for writing scalable and maintainable code. I am proficient in working with **React Router**, and **Apollo Client** for GraphQL integration. My experience extends to CSS frameworks such as **SASS** and **Less**, ensuring responsive and visually appealing UIs.
 
 In addition to React, I have a solid understanding of modern **JavaScript** (ES6+), **TypeScript**, and bundling tools like **Webpack**. I have a strong grasp of component lifecycle, performance optimization, and accessibility considerations.
 
-On the backend, I primarily work with **Node.js**, building scalable RESTful APIs and **GraphQL** endpoints using frameworks like **Express**, My expertise includes **database management** with both SQL (e.g., **PostgreSQL**, **MySQL**) and NoSQL databases (e.g., **MongoDB**, **ArangoDB**), ensuring efficient data querying, indexing, and optimization.
+On the backend, I primarily work with **Node.js**, building scalable RESTful APIs and **GraphQL** endpoints using frameworks like **Express**, My expertise includes **database management** with NoSQL databases (e.g., **MongoDB**, **ArangoDB**), ensuring efficient data querying, indexing, and optimization.
 
 ### DevOps & Testing:
 
-Beyond coding, I am familiar with **Docker** for containerization, making it easier to manage environments and ensure consistency between development and production. I often use CI/CD pipelines for automated deployment and testing, improving development workflow. I also write **unit tests** using tools like **Jest**, **Mocha**, and **Chai**, ensuring code reliability and coverage.
+Beyond coding, I am familiar with **Docker** for containerization, making it easier to manage environments and ensure consistency between development and production. I often use CI/CD pipelines for automated deployment and testing, improving development workflow. I also write **unit tests** using tools like **Jest**, ensuring code reliability and coverage.
 
 ### Collaboration & Problem-Solving:
 
 I thrive in collaborative environments and enjoy working in agile teams. I am well-versed in **version control** (Git), **pull requests**, and **code reviews**, and I value open communication to solve problems effectively. Whether it's implementing new features, troubleshooting bugs, or optimizing performance, I approach challenges with creativity and a solution-oriented mindset.
 
 In summary, I am committed to continuously learning and improving my skills while building high-quality web applications that provide a seamless user experience.
-
-
 
 # Overview
 
