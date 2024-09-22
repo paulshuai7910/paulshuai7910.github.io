@@ -10,11 +10,11 @@ Hello, my name is Paul, And I graduated from Huanghe Science and Technology Coll
 
 I have seven years of work experience, with four years worked as a Web Development Engineer. Three years ago, I transitioned into a Full-Stack Engineer role."
 
-I have a deep understanding of React Framework,include hooks, state management( with tools like redux or context API),component-base architecture, and best practices for writing scalable and maintainable code. I am proficient in working with **React Router**, and **Apollo Client** for GraphQL integration. My experience extends to CSS frameworks such as **SASS** and **Less**, ensuring responsive and visually appealing UIs.
+I have a deep understanding of React Framework,include hooks, state management( with tools like redux or context API),component-base architecture, and best practices for writing scalable and maintainable code. I am proficient in working with **React Router**, and **Apollo Client** for GraphQL integration. My experience extends to CSS frameworks such as **SASS** and **Less**.
 
-In addition to React, I have a solid understanding of modern **JavaScript** (ES6+), **TypeScript**, and bundling tools like **Webpack**. I have a strong grasp of component lifecycle, performance optimization, and accessibility considerations.
+In addition to React, I have a deep understanding of modern **JavaScript** (ES6+), **TypeScript**, and bundling tools like **Webpack**. I have a strong understanding of component lifecycle, performance optimization, and accessibility considerations.
 
-On the backend, I primarily work with **Node.js**, building scalable RESTful APIs and **GraphQL** endpoints using frameworks like **Express**, My expertise includes **database management** with NoSQL databases (e.g., **MongoDB**, **ArangoDB**), ensuring efficient data querying, indexing, and optimization.
+On the backend, I work with **Node.js**, building scalable RESTful APIs and **GraphQL** endpoints using frameworks like **Express**, My expertise includes **database management** with NoSQL databases (e.g., **MongoDB**, **ArangoDB**), ensuring efficient data querying, indexing, and optimization.
 
 ### DevOps & Testing:
 
