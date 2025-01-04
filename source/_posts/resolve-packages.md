@@ -7,7 +7,7 @@ tags:
 
 # Package bug
 
-## 使用补丁工具
+## 1. 使用补丁工具
 
 patch-package
 
@@ -22,14 +22,14 @@ npx patch-package <package-name>
 生成新文件：`<package-name>+<version>.patch`，保存在`patches`目录下
 在项目的`package.json`文件中，在`scripts`部分添加一个`postinstall`脚本，例如：`"postinstall": "patch-package"`。这样每次安装依赖时，都会自动应用补丁
 
-## 手动修改并使用本地版本
+## 2. 手动修改并使用本地版本
 
 1. 找到有问题的包在项目的`node_modules`目录中的位置。
 2. 复制该包的整个目录到项目中的其他位置，比如`src/vendorPatched`。
 3. 对复制出来的版本进行手动修改以修复 bug。
 4. 在项目代码中，使用相对路径导入修改后的本地版本，而不是从`node_modules`中导入原始有问题的版本。例如，如果是一个 JavaScript 模块，可以使用`import { someFunction } from '../vendorPatched/some-package/some-file.js';`。
 
-## 使用 fork 和替代源
+## 3. 使用 fork 和替代源
 
 如果 package 是开源的，可以在代码平台进行 fork
 
@@ -41,9 +41,7 @@ npx patch-package <package-name>
 "some-package": "git+https://github.com/your-username/forked-package.git"
 ```
 
-## Other
-
-### 通过脚本 copy 覆盖
+## 4. 通过脚本 copy 覆盖
 
 还是用`postinstall`这个勾子，在这个勾子执行`cp`修改过的文件  `./node_modules/包名/原始文件`拷贝过去，最终`node_modules`下的文件就变成了修改后的文件了，比如：
 
