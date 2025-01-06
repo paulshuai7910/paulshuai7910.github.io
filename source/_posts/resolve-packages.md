@@ -11,13 +11,31 @@ tags:
 
 patch-package
 
-安装：npm install patch-package postinstall
+1. 安装：npm install patch-package postinstall
+2. 添加脚本：
 
-使用步骤：发现有问题的包代码，进行修复，验证后运行：
+```javascript
+{
+  "scripts": {
+    "postinstall": "patch-package"
+  }
+}
 
-```typescript
-npx patch-package <package-name>
 ```
+
+3. 修改 node_modules 中的代码
+4. 生成补丁文件
+   修改完代码后，你需要使用 patch-package 生成一个补丁文件来记录你的修改。补丁文件会记录你对 node_modules 中依赖包的更改，并保存为 .patch 文件。
+
+```bash
+npx patch-package some-package
+
+```
+
+这将生成一个补丁文件，并将其保存在项目根目录下的 patches/ 文件夹中。补丁文件的命名格式通常是：<package-name>+<version>.patch
+
+5. 确保补丁文件生效
+   在补丁文件生成后，你不需要做任何手动的应用操作，因为 postinstall 脚本已经配置好了，它会确保每次执行 npm install 时自动应用补丁。
 
 生成新文件：`<package-name>+<version>.patch`，保存在`patches`目录下
 在项目的`package.json`文件中，在`scripts`部分添加一个`postinstall`脚本，例如：`"postinstall": "patch-package"`。这样每次安装依赖时，都会自动应用补丁
