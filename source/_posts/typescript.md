@@ -101,7 +101,7 @@ function infiniteLoop(): never {
 }
 ```
 
-# Typescript 断言
+# Typescript 断言'<>as'
 
 有时候你会遇到这样的情况，你会比 TypeScript 更了解某个值的详细信息。通常这会发生在你清楚地知道一个实体具有比它现有类型更确切的类型。
 
@@ -123,7 +123,9 @@ let someValue: any = "this is a string"
 let strLength: number = (someValue as string).length
 ```
 
-## 非空断言
+## 非空断言 '!'
+
+非空断言（!）是一个方便的工具，用于告诉 TypeScript 编译器某个变量在特定上下文中不可能是 null 或 undefined。然而，滥用非空断言可能会隐藏真正的 null 或 undefined 问题，这些问题在运行时可能会出现，导致应用崩溃。
 
 ```ts
 const a: number | undefined = undefined
@@ -133,7 +135,20 @@ console.log(b)
 
 # 类型守卫
 
-in 关键字
+类型守卫允许开发者在使用特定变量或者属性之前，对变量的类型进行更精准的检查，这在处理联合类型或者任何类型都特别有用，缩小变量的可能范围，提供更具体的类型信息给编译器
+
+类型守卫通常是一个表达式，它返回一个布尔值，用于指示某个值是否属于特定的类型。TypeScript 编译器会利用这个返回值来缩小类型范围，使得在类型守卫之后的代码块中，该值的类型会变得更加精确。
+
+## 类型守卫的种类
+
+TypeScript 中主要有以下几种类型守卫：
+
+- typeof 类型守卫：用于检查一个值是否为原始类型（如 string、number、boolean 等）。
+- instanceof 类型守卫：用于检查一个值是否是某个类的实例。
+- in 类型守卫：用于检查对象中是否存在某个属性。
+- 自定义类型守卫：开发者可以通过编写自定义函数来实现类型守卫，这些函数返回一个布尔值，并通常使用类型谓词（如 isFish）来断言变量的确切类型。
+
+## in 关键字
 
 ```ts
 interface Admin {
@@ -158,7 +173,7 @@ function printEmployeeInformation(emp: UnknownEmployee) {
 }
 ```
 
-typeof 关键字
+## typeof 关键字
 
 ```ts
 function padLeft(value: string, padding: string | number) {
@@ -172,7 +187,10 @@ function padLeft(value: string, padding: string | number) {
 }
 ```
 
-# 联合类型和类型别名
+# 联合类型
+
+- 定义：联合类型允许一个值可以是几种类型中的一个，即一个变量可以是多个类型中的任何一个，但在任一时间点只能是其中一个类型的具体实例。
+- 符号：使用管道符号（|）来表示。
 
 联合类型通常与 null 或 undefined 一起使用：
 
@@ -188,6 +206,9 @@ type EventNames = "click" | "scroll" | "mousemove"
 # 交叉类型
 
 在 TypeScript 中交叉类型是将多个类型合并为一个类型
+
+- 定义：交叉类型是将多个类型合并成一个新类型，这个新类型拥有所有输入类型的所有属性和方法。即一个值必须同时满足所有合并类型的属性和方法。
+- 符号：使用符号&来定义，类似于数学中的“交集”的概念。
 
 ```ts
 type PartialPointX = { x: number }
