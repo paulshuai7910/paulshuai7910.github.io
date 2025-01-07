@@ -6,7 +6,58 @@ tags:
 
 # 代码分割（Code Splitting）
 
+import() 是 JavaScript 的一个动态模块加载语法，它允许在运行时动态地加载模块。与传统的 import 语法不同，import() 是一个 异步 操作，并返回一个 Promise。这样，可以在需要时加载模块，而不是在应用启动时加载所有模块。
+
 - 动态导入：使用动态导入（import()）来按需加载代码块，减少初始加载时间。
+
+```js
+import(moduleSpecifier)
+  .then((module) => {
+    // 使用动态加载的模块
+  })
+  .catch((error) => {
+    // 错误处理
+  })
+```
+
+- 按需加载
+
+```js
+import React, { Suspense, lazy } from "react"
+
+// 使用 lazy 函数动态加载组件
+const MyComponent = lazy(() => import("./MyComponent"))
+
+function App() {
+  return (
+    <div>
+      <h1>Welcome to my app</h1>
+      <Suspense fallback={<div>Loading...</div>}>
+        <MyComponent />
+      </Suspense>
+    </div>
+  )
+}
+
+export default App
+```
+
+- 代码拆分
+  Webpack 内部会自动处理动态导入的代码拆分。每当 import() 被调用时，Webpack 会：
+
+1. 生成一个新的 JavaScript 文件（即代码块）。
+2. 在加载该模块时，异步地加载这个新生成的文件。
+3. 如果该模块已经被加载过，则不会重复加载，而是使用缓存的模块。
+
+```js
+// index.js
+import("./moduleA").then((module) => {
+  console.log(module)
+})
+```
+
+Webpack 会将 moduleA 拆分成一个独立的文件，假设叫做 moduleA.bundle.js。这样，moduleA.bundle.js 文件会在需要时被加载，而不是在页面加载时就被加载。
+
 - 配置 SplitChunksPlugin：在 Webpack 配置中使用 optimization.splitChunks 选项来分割代码，提取公共模块和第三方库到单独的 chunk 中。
 
 # Tree Shaking

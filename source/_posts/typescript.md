@@ -304,7 +304,9 @@ Type alias extends type alias
 
 # TypeScript 泛型 (<T>)
 
-泛型（Generics）是允许同一个函数接受不同类型参数的一种模板。相比于使用 any 类型，使用泛型来创建可复用的组件要更好，因为泛型会保留参数类型。
+泛型（Generics）允许你在编写函数、类、接口等时，不必指定特定的类型，而是让类型在使用时确定。通过泛型，TypeScript 使得代码更加灵活且可复用，同时保持类型安全。
+
+泛型的核心思想是提供“占位符”类型，类型会在使用时被指定或推导出来。你可以使用泛型在类型上进行参数化，使得一个函数或类能够接受多种类型，而不需要在编写时指定具体类型。
 
 ```ts
 function identity<T>(arg: T): T {
@@ -341,13 +343,51 @@ function identity<T, U>(value: T, message: U): T {
 console.log(identity(68, "Semlinker"))
 ```
 
+## 泛型约束
+
+泛型可以带有约束，指定某些类型必须符合特定的接口或类型。这使得泛型更加灵活，同时能够限制它们的使用范围。
+
+```ts
+function loggingIdentity<T extends { length: number }>(arg: T): T {
+  console.log(arg.length) // 可以安全访问 `length` 属性
+  return arg
+}
+
+loggingIdentity([1, 2, 3]) // 合法，数组有 `length` 属性
+loggingIdentity("Hello") // 合法，字符串有 `length` 属性
+loggingIdentity(5) // 错误，数字没有 `length` 属性
+```
+
+- T extends { length: number } 表示泛型 T 必须是一个包含 length 属性的类型。
+
+## 多个泛型参数
+
+可以为一个函数、接口或类指定多个泛型参数，使其支持多个类型参数。
+
+```ts
+function pair<T, U>(first: T, second: U): [T, U] {
+  return [first, second]
+}
+
+let result = pair(1, "hello") // [number, string]
+```
+
+- T 和 U 分别表示两个不同的类型参数。pair 函数返回一个元组，元素类型分别为 T 和 U
+
 ## 泛型接口
+
+可以定义一个泛型接口，以便在对象和函数中使用
 
 ```ts
 interface GenericIdentityFn<T> {
   (arg: T): T
 }
+
+let myIdentity: GenericIdentityFn<number> = identity
 ```
+
+- GenericIdentityFn 是一个接口，描述了一个接受 T 类型参数并返回 T 类型的函数。
+- 可以通过指定具体类型（如 number）来创建具体类型的函数。
 
 ## 泛型类
 
