@@ -11,18 +11,14 @@ Hello, my name is Paul, And I graduated from Huanghe Science and Technology Coll
 I have seven years of work experience, with four years worked as a Web Development Engineer. Three years ago, I transitioned into a Full-Stack Engineer role."
 
 I have a deep understanding of React Framework,include hooks, state management( with tools like redux or context API),component-base architecture, and best practices for writing scalable and maintainable code. I am proficient in working with **React Router**, and **Apollo Client** for GraphQL integration. My experience extends to CSS frameworks such as **SASS** and **Less**.
-我对 reacr 有很深的理解，包括 hooks，state management( 比如 redux 或者 context API)，组件化架构，以及编写可扩展和可维护代码的最佳实践。我对 React Router 有深入的理解，并且对 Apollo Client 进行了 GraphQL 集成。我对 SASS 和 Less 等 CSS 框架有深入的理解。
 
 In addition to React, I have a deep understanding of modern **JavaScript** (ES6+), **TypeScript**, and bundling tools like **Webpack**. I have a strong understanding of component lifecycle, performance optimization, and accessibility considerations.
-除了 react，我对现代的 JavaScript（ES6+），TypeScript，以及 bundling tools like Webpack 有深入的理解。我对组件生命周期，性能优化，以及无障碍考虑有深刻的理解。
 
 On the backend, I work with **Node.js**, building scalable RESTful APIs and **GraphQL** endpoints using frameworks like **Express**, My expertise includes **database management** with NoSQL databases (e.g., **MongoDB**, **ArangoDB**), ensuring efficient data querying, indexing, and optimization.
-在后端，我使用 nodejs 工作，构建可扩展的 RESTful API 和 GraphQL 端点，使用框架如 Express，我的经验包括对 NoSQL 数据库（例如 MongoDB，ArangoDB）的数据库管理，确保高效的数据查询，索引和优化。
 
 ### DevOps & Testing:
 
 Beyond coding, I am familiar with **Docker** for containerization, making it easier to manage environments between development and production. I often use CI/CD pipelines for automated deployment and testing, improving development workflow. I also write **unit tests** using tools like **Jest**, ensuring code coverage.
-除了编码，我还熟悉 docker 容器化，使开发和生产环境之间的容器化更容易管理。我经常使用 CI/CD 管道进行自动化部署和测试，提高开发工作流程。我还编写单元测试，使用工具如 Jest，确保代码覆盖率。
 
 ### Collaboration & Problem-Solving:
 
