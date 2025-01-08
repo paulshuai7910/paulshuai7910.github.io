@@ -44,7 +44,7 @@ In summary, I am committed to continuously learning and improving my skills whil
 | ---------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | -------------------------- | ------------------------------------------- | -------------------------------------------------- |
 | <ul><li>HTML</li><li> CSS</li><li> JavaScript</li><li> GraphQL</li><li> TypeScript</li><li> Nodejs</li><li> Less</li><li> Sass</li></ul> | <ul><li>Apollo</li><li>React</li><li>semantic</li><li>Wepy</li><li>Express</li><li>jQuery</li><li>Bootstrap</li><li>Jest</li></ul> | <ul><li>ArangoDB</li></ul> | <ul><li>Jenkins</li><li>Azure ADO</li></ul> | <ul><li>Git</li><li>Docker</li><li>Sonar</li></ul> |
 
-# WORKING EXPERIENCE
+# Working Experience
 
 - Jun. 2021 – Present: China Software Inc.
   - Role: Full Stack Engineer
@@ -55,12 +55,12 @@ In summary, I am committed to continuously learning and improving my skills whil
 - Sep. 2015 – Dec. 2016: Beijing Zhaoshang Co.Ltd ( 1 years and 3 months)
   - Role: Web Development Engineer
 
-# EDUCATION
+# Education
 
 - 2013-2017: Huanghe Science and Technology College
   - Major: Computer Science and Technology
 
-# PROJECTS
+# Projects
 
 - Risk Assessment – Risk System (3 years and 2 months)
   - description: Stay informed and act faster with a dynamic, data-driven risk assessment platform. Designed with real-world experience, Ready Assess streamlines assessments, making them visual, interactive, trackable and actionable.
@@ -69,7 +69,7 @@ In summary, I am committed to continuously learning and improving my skills whil
 - Sephora mini program (3 months)
   - description: The Sephora WeChat mini program is a new e-commerce channel added by Sephora within the WeChat system. The project started almost from scratch and requires the porting of APP functions to the mini program as much as possible, using the wepy framework, implementing SAP mode, and component-based development
 
-# CONTACT
+# Contact
 
 - Email: <a href="mailto:shuaizihao0608@outlook.com">shuaizihao0608@outlook.com</a>
 - Phone: 10001001110110010001001000100010000 (二进制号码)
