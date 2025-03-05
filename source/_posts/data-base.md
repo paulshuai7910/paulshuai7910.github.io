@@ -142,3 +142,35 @@ transferFunds()
 - 回滚与提交：
   - 如果发生任何错误（例如余额不足），事务将自动回滚。
   - 如果操作顺利执行，事务会自动提交。
+# 数据库ORM
+ORM（Object-Relational Mapping，对象关系映射）​​ 是一种编程技术，用于在 ​面向对象编程语言​（如 Python、Java、C#、JavaScript）和 ​关系型数据库​（如 MySQL、PostgreSQL、Oracle）之间建立桥梁。它通过将数据库中的表（Table）映射为程序中的类（Class）、表的行（Row）映射为对象（Object）、表的列（Column）映射为对象的属性（Property），使开发者能够用面向对象的方式操作数据库，而无需直接编写 SQL 语句。
+## ORM 的核心优点
+### 提高开发效率
+​无需手写 SQL：ORM 自动生成 SQL 语句，开发者只需操作对象，减少重复的数据库操作代码。
+​代码简洁：用面向对象的方式（如 user.save()）替代冗长的 SQL 语句（如 INSERT INTO users (name, email) VALUES (...)）。
+​快速迭代：在业务逻辑复杂或需求频繁变更时，ORM 能更快适应变化。
+### 代码可维护性
+​抽象数据库细节：业务逻辑与数据库操作解耦，代码更清晰。
+​统一代码风格：所有数据库操作通过 ORM 接口完成，避免 SQL 语句分散在代码各处。
+###  跨数据库兼容
+​无缝切换数据库：ORM 封装了不同数据库的 SQL 方言，例如从 MySQL 切换到 PostgreSQL 时，只需修改配置，无需重写 SQL 代码。
+​支持多种数据库：主流 ORM 框架（如 SQLAlchemy、TypeORM）支持 MySQL、PostgreSQL、SQLite 等。
+### 防止 SQL 注入
+​参数化查询：ORM 自动对用户输入进行转义，避免拼接 SQL 字符串导致的安全漏洞（如 user.query.filter_by(name=user_input) 是安全的）。
+### 高级功能支持
+​事务管理：通过简单的 API（如 session.commit()）处理复杂的事务。
+​关联关系处理：轻松定义一对多、多对多关系（如 User 和 Order 的关联）。
+​数据迁移工具：部分 ORM（如 Django ORM）提供数据库迁移工具，自动生成表结构变更脚本。
+### 更好的抽象与复用
+​模型复用：通过继承或组合复用模型逻辑（如基类 BaseModel 定义公共字段）。
+​查询链式调用：支持链式方法调用构建复杂查询（如 User.query.filter(...).order_by(...).limit(10)）。
+
+### **主流 ORM 框架示例**
+| 语言       | ORM 框架               | 特点                              |
+|------------|------------------------|-----------------------------------|
+| Python     | Django ORM、SQLAlchemy | Django ORM 高度集成，SQLAlchemy 灵活 |
+| Java       | Hibernate              | 企业级应用，支持 JPA 标准           |
+| JavaScript | TypeORM、Sequelize     | TypeORM 支持 TypeScript，语法优雅   |
+| C#         | Entity Framework       | .NET 官方推荐，功能强大             |
+
+---

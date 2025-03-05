@@ -152,3 +152,57 @@ tags:
    - **如何处理未捕获的异常？**
    - **如何实现 JWT 认证？**
    - **如何设计一个高并发的 Node.js 应用？**
+   ## 可读流
+   fs.createReadStream('large-file').pipe(csv()).on().on
+   ## 可写流
+   fs.createWriteStream('out.csv')
+   - 适用场景：小文件，读取后直接处理:
+   const data = JSON.parse(fs.readFileSync("file.json", "utf8"));
+   console.log(data);
+   ### 读取大文件
+   ```js
+   const fs = require("fs");
+
+        const stream = fs.createReadStream("big-file.txt", { encoding: "utf8" });
+
+        stream.on("data", (chunk) => {
+          console.log("Received chunk:", chunk);
+        });
+
+        stream.on("end", () => {
+          console.log("File read completed.");
+        });
+  ```
+  ## 读取 + 处理数据流（管道）
+  ```js
+  const fs = require("fs");
+  const { Transform } = require("stream");
+
+  const readStream = fs.createReadStream("input.txt", { encoding: "utf8" });
+  const writeStream = fs.createWriteStream("output.txt");
+
+  const transformStream = new Transform({
+    transform(chunk, encoding, callback) {
+      const modifiedChunk = chunk.toString().toUpperCase(); // 转换数据
+      callback(null, modifiedChunk);
+    },
+  });
+
+  readStream.pipe(transformStream).pipe(writeStream);
+
+  writeStream.on("finish", () => console.log("File transformation completed."));
+  ```
+## Node.js 进行 ETL（数据提取、转换、加载）
+  示例：从 CSV 读取数据 → 处理 → 存入数据库
+   ```js
+    fs.createReadStream("data.csv")
+    .pipe(csv())
+    .on("data", async (row) => {
+      const query = "INSERT INTO users (name, age) VALUES ($1, $2)";
+      await db.query(query, [row.name, row.age]); // 插入数据库
+    })
+    .on("end", () => {
+      console.log("CSV 数据导入完成");
+      db.end();
+    });
+  ```
