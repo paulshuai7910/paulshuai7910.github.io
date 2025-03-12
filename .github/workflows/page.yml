@@ -3,21 +3,22 @@ name: Pages
 on:
   push:
     branches:
-      - main # default branch
+      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4  # 更新到 v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          # If your repository depends on submodule, please see: https://github.com/actions/checkout
           submodules: recursive
+
       - name: Use Node.js 20.x
         uses: actions/setup-node@v4
         with:
           node-version: "20"
+
       - name: Cache NPM dependencies
         uses: actions/cache@v4
         with:
@@ -25,19 +26,25 @@ jobs:
           key: ${{ runner.OS }}-npm-cache
           restore-keys: |
             ${{ runner.OS }}-npm-cache
+
       - name: Install Dependencies
         run: npm install
+
       - name: Build
-        run: npm run build
+        run: npm run build  # 确认构建产物路径
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: ./public
+          path: ./public  # 默认 Pages 部署路径
+
+      # 可选：如果不需要普通 artifact，直接删除此步骤
       - name: Upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4  # 必须用 v4
         with:
           name: my-artifact
-          path: dist/artifact.txt
+          path: ./public/artifact.txt  # 根据实际文件路径修改
+
   deploy:
     needs: build
     permissions:
