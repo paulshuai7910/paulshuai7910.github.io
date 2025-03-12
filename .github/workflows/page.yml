@@ -34,16 +34,9 @@ jobs:
         run: npm run build  # 确认构建产物路径
 
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./public  # 默认 Pages 部署路径
-
-      # 可选：如果不需要普通 artifact，直接删除此步骤
-      - name: Upload artifact
-        uses: actions/upload-artifact@v4  # 必须用 v4
-        with:
-          name: my-artifact
-          path: ./public/artifact.txt  # 根据实际文件路径修改
 
   deploy:
     needs: build
