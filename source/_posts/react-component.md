@@ -1,7 +1,7 @@
 ---
 title: react 组件开发原则
 date: 2025-01-02 12:13:03
-tags:
+tags: react
 ---
 
 ### 1. **单一职责原则 (Single Responsibility Principle)**

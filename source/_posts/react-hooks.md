@@ -1,7 +1,7 @@
 ---
 title: react-hooks
 date: 2024-05-22 22:03:38
-tags:
+tags: react
 ---
 
 - createContext API 可以创建一个 context，你可以将其提供给子组件，通常会与 useContext 一起配合使用。

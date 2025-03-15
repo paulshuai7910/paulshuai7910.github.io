@@ -1,7 +1,7 @@
 ---
 title: ts in node
 date: 2024-05-04 09:55:09
-tags:
+tags: typescript nodejs
 ---
 
 Node.js 无法原生运行 TypeScript。你无法直接从命令行调用 node example.ts。但是这个问题有三种解决方案

@@ -1,7 +1,7 @@
 ---
 title: EventLoop 事件循环
 date: 2024-06-03 12:39:13
-tags:
+tags: eventloop nodejs
 ---
 
 # 进程和线程的定义：

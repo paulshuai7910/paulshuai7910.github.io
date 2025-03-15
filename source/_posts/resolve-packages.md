@@ -2,7 +2,7 @@
 title: Package bug处理方式
 
 date: 2024-07-12 10:11:49
-tags:
+tags: package
 ---
 
 # Package bug

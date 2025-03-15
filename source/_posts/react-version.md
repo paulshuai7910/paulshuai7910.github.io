@@ -1,7 +1,7 @@
 ---
 title: react-version info
 date: 2024-04-13 11:34:12
-tags:
+tags: react
 ---
 
 # react 16

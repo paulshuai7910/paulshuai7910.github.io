@@ -1,7 +1,7 @@
 ---
 title: Docker config
 date: 2024-04-03 15:45:31
-tags:
+tags: docker
 ---
 
 # Dockerfile

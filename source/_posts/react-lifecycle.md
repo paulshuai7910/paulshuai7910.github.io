@@ -2,7 +2,7 @@
 title: react-lifecycle
 
 date: 2024-01-22 15:23:43
-tags:
+tags: react
 ---
 
 constructor：不是 react 的方法，是 es6 的方法,可以在 react 中使用，调用当前组件的父级，也可以在函数中设置当前组件所需要的状态 state；

@@ -100,7 +100,7 @@ menu:
     node++:
       default: /node++/ || fa fa-tags
 
-  # tags: /tags/ || fa fa-tags
+  tags: /tags/ || fa fa-tags
   #categories: /categories/ || fa fa-th
   archives: /archives/ || fa fa-archive
   #schedule: /schedule/ || fa fa-calendar

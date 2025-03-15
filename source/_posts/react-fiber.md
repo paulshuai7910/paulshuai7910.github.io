@@ -1,7 +1,7 @@
 ---
 title: React Fiber架构的原理和工作模式
 date: 2024-09-02 09:32:09
-tags:
+tags: react
 ---
 
 # What's Fiber？

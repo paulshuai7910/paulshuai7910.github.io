@@ -1,7 +1,7 @@
 ---
 title: Typescript-tools
 date: 2024-04-14 19:35:11
-tags:
+tags: typescript
 ---
 
 # Pick

@@ -1,7 +1,7 @@
 ---
 title: mysql 学习计划
 date: 2025-03-08 22:08:20
-tags:
+tags: database mysql
 ---
 
 ### **一、快速入门：MySQL 基础（1-2 周）**
