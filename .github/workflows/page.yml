@@ -12,7 +12,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4  # 更新到 v4
+      - uses: actions/checkout@v4 # 更新到 v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           submodules: recursive
@@ -34,12 +34,12 @@ jobs:
         run: npm install
 
       - name: Build
-        run: npm run build  # 确认构建产物路径
+        run: npm run build # 确认构建产物路径
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./public  # 默认 Pages 部署路径
+          path: ./public # 默认 Pages 部署路径
 
   deploy:
     needs: build
@@ -50,4 +50,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
