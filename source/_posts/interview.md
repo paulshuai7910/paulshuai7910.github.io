@@ -1,6 +1,6 @@
 ---
-title: interview
-date: 2024-09-04 13:48:19
+title: interview 面试
+date: 2024-01-04 13:48:19
 tags:
 ---
 
@@ -35,3 +35,12 @@ the frontend uses React, Apollo Client, AG-Grid, and CKEditor for a responsive a
 The backend is powered by Node.js with GraphQL for efficient data querying, while ArangoDB serves as the database. Following the Agile Scrum methodology, the project is containerized using Docker, uses Git for version control, and manages tasks and deployments with Azure ADO.
 
 项目名称 Risk Assessment，是一个风险评估系统，主要面向欧美中小银行证券的客户，项目采用 Apollo 全栈技术架构，前端以 react 为核心，包含 apollo-client, ag-grid, ckeditor 等，后端使用 nodejs 作为开发语言，craphql 作为查询语言，数据库使用 arangodb，项目采用敏捷开发，使用 scrum 框架，项目采用 docker 容器化，使用 sonar 进行代码质量检测，使用 github 进行代码管理，使用 azure ado 进行项目管理和自动化部署
+
+# Question
+
+1. Why did you leave your last company?
+   The company faced budget cuts in the new fiscal year, and my role was unfortunately impacted. However, I've since focused on upgrading my skills.
+
+2. how long did you leave your last corporation?
+
+It’s been about three months since I left. I’ve used this time to focus on professional development and am now ready to take on new challenges."
