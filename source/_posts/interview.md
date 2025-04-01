@@ -44,3 +44,6 @@ The backend is powered by Node.js with GraphQL for efficient data querying, whil
 2. how long did you leave your last corporation?
 
 It’s been about three months since I left. I’ve used this time to focus on professional development and am now ready to take on new challenges."
+
+3. could you introduce your last company.
+   ok,
