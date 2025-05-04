@@ -6,7 +6,6 @@
     "build": "hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
-    "new": "hexo new",
     "server": "hexo server"
   },
   "hexo": {
