@@ -1,7 +1,7 @@
 ---
 title: docker build demo
 date: 2025-04-15 18:12:43
-tags:
+tags: docker build
 ---
 
 | 代码 | 解释 |
