@@ -1,7 +1,7 @@
 ---
 title: module
 date: 2025-01-13 15:59:08
-tags:
+tags: module
 ---
 
 # UMD（Universal Module Definition）
